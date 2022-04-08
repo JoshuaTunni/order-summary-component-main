@@ -1,0 +1,62 @@
+@import "settings";
+@import "utilities";
+
+// > soft reset
+  * {
+    box-sizing: border-box;
+
+    font-family: $font-fam-main;
+
+    padding: 0;
+    border: none;
+    margin: 0;
+  }
+
+// > elements
+  html {
+    font-size: $font-size-base;
+  }
+
+  body {
+    text-align: center;
+
+    margin-top: $spacing-a;
+    padding-left: $spacing-b;
+    padding-right: $spacing-b;
+
+    background-color: $col-prim-a;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  h1{
+    @include _SetTxt($font-size-a, $font-wei-a, $col-neu-c);
+  }
+
+  h2{
+    @include _SetTxt($font-size-b, $font-wei-a, $col-neu-c);
+    > span{
+      @include _SetTxt(null, $font-wei-b, $col-neu-b);
+    }
+  }
+
+  h3{
+    @include _SetTxt($font-size-c, $font-wei-b, $col-neu-c);
+
+    margin-top: $spacing-b;
+  }
+
+  p{
+    @include _SetTxt($font-size-b, $font-wei-c, $col-neu-b);
+  }
+
+  a{
+    @include _SetTxt($font-size-c, $font-wei-a, $col-prim-b);
+    @include _HoverFocus($col-prim-c, null);
+  }
+
+  button{
+    @include _SetTxt($font-size-b, $font-wei-a, null);
+  }

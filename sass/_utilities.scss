@@ -1,0 +1,81 @@
+@import "settings";
+
+// > functions / mixins
+  @mixin _SetTxt($size: null, $weight: null, $colour: null) {
+  font-size: $size;
+  font-weight: $weight;
+  color: $colour;
+  }
+
+  @mixin _OwlSpaceChildren($spacing, $dir: up) {
+    > * + * {
+      @if($dir == "up") {
+        margin-top: $spacing;
+      }
+      @else {
+        margin-left: $spacing;
+      }
+    }
+  }
+
+  @mixin _HoverFocus($col, $bkgd-col) {
+    &:hover{
+      @if($col != null){
+        color: $col;
+      }
+
+      @if($bkgd-col != null) {
+        background-color: $bkgd-col;
+      }
+
+      text-decoration: none;
+
+      cursor: pointer;
+    }
+
+    &:focus{
+      @if($col != null) {
+        color: $col;
+      }
+      
+      @if($bkgd-col != null) {
+        background-color: $bkgd-col;
+      }
+
+      text-decoration: none;
+
+      outline: 2px solid $col-prim-b;
+    }
+
+    // links = no decor, col change, focus outline, cursor pointer
+    // btn = cursor pointer, focus outline
+    // cta = back col change
+    // cancel-btn = col change
+  }
+// > objects
+  @mixin -Rounded($size, $pos) {
+    $top-size: 10px;
+    
+    @if($size == "large") {
+      $top-size: 20px;
+    }
+
+    $btm-size: $top-size;
+
+    @if($pos == "top"){
+      $btm-size: 0;
+    }
+    
+    border-radius: $top-size $top-size $btm-size $btm-size;
+  }
+
+  @mixin -VertPadded {
+    padding-top: $spacing-c;
+    padding-bottom: $spacing-c;
+  }
+
+  @mixin -WideStretch {
+    width: 100%;
+  }
+
+  

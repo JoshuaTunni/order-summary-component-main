@@ -1,0 +1,58 @@
+@import "settings";
+@import "utilities";
+
+// smaller mobile screens
+  @media (max-width: $media-max-width){
+    body {
+      margin-top: $spacing-b;
+    }
+    
+    .con-payment-plan {
+      flex-wrap: wrap;
+      justify-content: center;
+      
+      .price-detail{
+        margin-left: $spacing-c;
+        margin-right: $spacing-c;
+      }
+      
+      .price-link {
+        margin-top: $spacing-c;
+        margin-left: 0;
+      }
+    }
+  }
+
+// larger screen
+  @media (min-width: $media-min-width) {
+   body{
+     margin-top: $spacing-d;
+   }
+
+   .card{
+     .content{
+       padding-left: $spacing-a;
+       padding-right: $spacing-a;
+       padding-bottom: $spacing-b;
+     }
+    }
+
+    .content{
+      .desc{
+        font-size: $font-size-c;
+      }
+    }
+
+    .con-payment-plan{
+      .icon{
+        width: $sizing-b;
+      }
+      .price-link{
+        font-size: $font-size-d;
+      }
+    }
+
+    .con-btns > *{
+      font-size: $font-size-c;
+    }
+  } 

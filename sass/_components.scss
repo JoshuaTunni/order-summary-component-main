@@ -1,0 +1,90 @@
+@import "settings"; 
+@import "utilities";
+
+.card{
+  @include -Rounded(large, all);
+
+  max-width: $sizing-a;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: white;
+
+  > * {
+    @include -WideStretch;
+  }
+  
+  .hero-img{
+    @include -Rounded(large, top);
+  }
+
+  .content{
+    padding-left: $spacing-b;
+    padding-right: $spacing-b;
+    padding-top: $spacing-b;
+    padding-bottom: $spacing-c;
+  }
+}
+
+.content{
+  @include _OwlSpaceChildren($spacing-b, up);
+
+  > * {
+    @include -WideStretch;
+  }
+
+  .desc{
+    margin-top: $spacing-c;
+  }
+
+  .con-payment-plan{
+    @include -Rounded(small, all);
+    @include -VertPadded;
+
+    display: flex;
+    align-items: center;
+
+    padding-left: $spacing-c;
+    padding-right: $spacing-c;
+    
+    background-color: $col-neu-a;
+  }
+}
+
+.con-payment-plan {
+  .price-detail {
+    margin-left: $spacing-c;
+  }
+
+  .price-link {
+    margin-left: auto;
+  }
+}
+
+.con-btns{
+  @include _OwlSpaceChildren($spacing-c, up);
+
+  > * {
+    @include -WideStretch;
+  }
+
+  .cta {
+    @include -Rounded(small, all);
+    @include -VertPadded;
+    @include _HoverFocus(null, $col-prim-c);
+
+    color: $col-neu-a;
+
+    background-color: $col-prim-b;
+    box-shadow: 0 1rem 25px lighten($col-prim-c, 15%);
+  }
+  
+  .cancel-btn {
+    @include -VertPadded;
+    @include _HoverFocus($col-neu-c, null);
+
+    color: $col-neu-b;
+    
+    background: none;
+  }
+}

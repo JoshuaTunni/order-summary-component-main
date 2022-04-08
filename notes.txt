@@ -1,0 +1,6 @@
+file structure:
+1 - settings - variables
+2 - base - base elements styles
+3 - untilities = reusable styling across components, useful mixins, functions
+4 - components = single-use styling for a specfic thing
+5 - layout = containers & wrappers, media queries

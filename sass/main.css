@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  border: none;
+  margin: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  text-align: center;
+  margin-top: 3rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  background-color: #e0e8ff;
+}
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1f2f56;
+}
+
+h2 {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #1f2f56;
+}
+
+h2 > span {
+  font-weight: 500;
+  color: #7280a7;
+}
+
+h3 {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #1f2f56;
+  margin-top: 1.5rem;
+}
+
+p {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #7280a7;
+}
+
+a {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #3829e0;
+}
+
+a:hover {
+  color: #776fed;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:focus {
+  color: #776fed;
+  text-decoration: none;
+  outline: 2px solid #3829e0;
+}
+
+button {
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.card {
+  border-radius: 20px 20px 20px 20px;
+  max-width: 26rem;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+}
+
+.card > * {
+  width: 100%;
+}
+
+.card .hero-img {
+  border-radius: 20px 20px 0 0;
+}
+
+.card .content {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 0.9rem;
+}
+
+.content > * + * {
+  margin-top: 1.5rem;
+}
+
+.content > * {
+  width: 100%;
+}
+
+.content .desc {
+  margin-top: 0.9rem;
+}
+
+.content .con-payment-plan {
+  border-radius: 10px 10px 10px 10px;
+  padding-top: 0.9rem;
+  padding-bottom: 0.9rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 0.9rem;
+  padding-right: 0.9rem;
+  background-color: #f5f7ff;
+}
+
+.con-payment-plan .price-detail {
+  margin-left: 0.9rem;
+}
+
+.con-payment-plan .price-link {
+  margin-left: auto;
+}
+
+.con-btns > * + * {
+  margin-top: 0.9rem;
+}
+
+.con-btns > * {
+  width: 100%;
+}
+
+.con-btns .cta {
+  border-radius: 10px 10px 10px 10px;
+  padding-top: 0.9rem;
+  padding-bottom: 0.9rem;
+  color: #f5f7ff;
+  background-color: #3829e0;
+  -webkit-box-shadow: 0 1rem 25px #b7b3f5;
+          box-shadow: 0 1rem 25px #b7b3f5;
+}
+
+.con-btns .cta:hover {
+  background-color: #776fed;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.con-btns .cta:focus {
+  background-color: #776fed;
+  text-decoration: none;
+  outline: 2px solid #3829e0;
+}
+
+.con-btns .cancel-btn {
+  padding-top: 0.9rem;
+  padding-bottom: 0.9rem;
+  color: #7280a7;
+  background: none;
+}
+
+.con-btns .cancel-btn:hover {
+  color: #1f2f56;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.con-btns .cancel-btn:focus {
+  color: #1f2f56;
+  text-decoration: none;
+  outline: 2px solid #3829e0;
+}
+
+@media (max-width: 20rem) {
+  body {
+    margin-top: 1.5rem;
+  }
+  .con-payment-plan {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .con-payment-plan .price-detail {
+    margin-left: 0.9rem;
+    margin-right: 0.9rem;
+  }
+  .con-payment-plan .price-link {
+    margin-top: 0.9rem;
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 25rem) {
+  body {
+    margin-top: 7rem;
+  }
+  .card .content {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 1.5rem;
+  }
+  .content .desc {
+    font-size: 0.8rem;
+  }
+  .con-payment-plan .icon {
+    width: 2.3rem;
+  }
+  .con-payment-plan .price-link {
+    font-size: 0.7rem;
+  }
+  .con-btns > * {
+    font-size: 0.8rem;
+  }
+}
+/*# sourceMappingURL=main.css.map */
