@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [Solution](https://www.frontendmentor.io/solutions/ordersummarycomponent-S1SbVnTXc)
+- [Live Site](https://joshuatunni.github.io/order-summary-component-main)
 
 ### Built with
 
@@ -38,5 +38,4 @@ Users should be able to:
 
 ## Author
 
-- Website - [Joshua Tunnicliffe](https://www.your-site.com)
-- Frontend Mentor - [@JoshuaTunni](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@JoshuaTunni](https://www.frontendmentor.io/profile/JoshuaTunni)

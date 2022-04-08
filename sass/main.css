@@ -66,7 +66,7 @@ a:hover {
   cursor: pointer;
 }
 
-a:focus {
+a:focus-visible {
   color: #776fed;
   text-decoration: none;
   outline: 2px solid #3829e0;
@@ -159,7 +159,7 @@ button {
   cursor: pointer;
 }
 
-.con-btns .cta:focus {
+.con-btns .cta:focus-visible {
   background-color: #776fed;
   text-decoration: none;
   outline: 2px solid #3829e0;
@@ -178,7 +178,7 @@ button {
   cursor: pointer;
 }
 
-.con-btns .cancel-btn:focus {
+.con-btns .cancel-btn:focus-visible {
   color: #1f2f56;
   text-decoration: none;
   outline: 2px solid #3829e0;

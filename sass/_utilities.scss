@@ -33,7 +33,7 @@
       cursor: pointer;
     }
 
-    &:focus{
+    &:focus-visible{
       @if($col != null) {
         color: $col;
       }
